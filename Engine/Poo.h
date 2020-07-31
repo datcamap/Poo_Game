@@ -11,10 +11,10 @@ public:
 	bool TestCollision( const Dude& dude ) const;
 	void Draw( Graphics& gfx ) const;
 private:
-	float x;
-	float y;
-	float vx;
-	float vy;
+	float x = 0.0f;
+	float y = 0.0f;
+	float vx = 0.0f;
+	float vy = 0.0f;
 	static constexpr int width = 24;
 	static constexpr int height = 24;
 	bool initialized = false;
