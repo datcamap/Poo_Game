@@ -250,7 +250,7 @@ void Graphics::DrawCircle(int x_mid, int y_mid, int radius, Color c)
 	{
 		for (int y = top; y < bottom; ++y)
 		{
-			if (((x - x_mid) * (x - x_mid) + (y - y_mid) * (y - y_mid) - radius * radius) < 1)
+			if ((x - x_mid) * (x - x_mid) + (y - y_mid) * (y - y_mid) <= radius * radius)
 			{
 				PutPixel(x, y, c);
 			}

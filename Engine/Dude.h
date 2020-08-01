@@ -8,15 +8,15 @@ class Dude
 public:
 	void ClampToScreen();
 	void Draw( Graphics& gfx ) const;
-	void Update( const Keyboard& kbd );
+	void Update( const Keyboard& kbd, const float dt );
 	int GetX() const;
 	int GetY() const;
 	int GetWidth() const;
 	int GetHeight() const;
 private:
-	int x = 400;
-	int y = 300;
-	static constexpr int speed = 1;
+	float x = 400.0f;
+	float y = 300.0f;
+	static constexpr int speed = 300; //pixels per seconds
 	static constexpr int width = 20;
 	static constexpr int height = 20;
 };

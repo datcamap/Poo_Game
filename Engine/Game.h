@@ -28,6 +28,7 @@
 #include "Goal.h"
 #include "Meter.h"
 #include "SoundEffect.h"
+#include "FrameTimer.h"
 #include <random>
 
 class Game
@@ -54,6 +55,7 @@ private:
 	std::mt19937 rng;
 	std::uniform_int_distribution<int> xDist;
 	std::uniform_int_distribution<int> yDist;
+	FrameTimer frameTime;
 	Dude dude;
 	Goal goal;
 	Meter meter;
