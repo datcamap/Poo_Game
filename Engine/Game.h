@@ -29,6 +29,7 @@
 #include "Meter.h"
 #include "SoundEffect.h"
 #include "FrameTimer.h"
+#include "SpriteCodex.h"
 #include <random>
 
 class Game

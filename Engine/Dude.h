@@ -16,7 +16,7 @@ public:
 private:
 	float x = 400.0f;
 	float y = 300.0f;
-	static constexpr int speed = 300; //pixels per seconds
+	static constexpr int speed = 100; //pixels per seconds
 	static constexpr int width = 20;
 	static constexpr int height = 20;
 };
